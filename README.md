@@ -30,12 +30,6 @@ After cloning the repository you should be on the `master` branch
 * Get an updated view of the remote using the `git fetch` command
 * Switch to the `dev` branch using the `git checkout <branch_name>`
 
-Not working? That's because you don't have the branch yet on your local repository, it needs to be created during the checkout by adding the `-b` parameter:
-
-`git checkout -b <branch_name>`
-
-* Now you can switch between the `master` and `dev` without the `-b` parameter because those branches are already created in your local repository
-
 Exercise 3: Making changes
 ===
 
@@ -44,6 +38,11 @@ When adding new feature or correcting bug we do it in a new branch for a better 
 * Be sure you are on the dev branch
 * Be sure your dev branch is up to date with the remote using `git pull <remote_name> <branch_name>`
 * Create a new branch named `add_water` based on the dev one using `git checkout`
+
+**Not working?** That's because the branch does not exists yet, it needs to be created the first time by adding the `-b` parameter:
+`git checkout -b <branch_name>`
+
+
 * Modify the `shopping.csv` to add 3 bottles of water to the shopping list
 * Commit your changes
 
