@@ -25,24 +25,24 @@ By default the remote will be called `origin`,It is possible to have multiple re
 Exercise 2: Changing branch
 ===
 
-After cloning the repository you should be on the `Master` branch
+After cloning the repository you should be on the `master` branch
 
 * Get an updated view of the remote using the `git fetch` command
-* Switch to the `Dev` branch using the `git checkout <branch_name>`
+* Switch to the `dev` branch using the `git checkout <branch_name>`
 
 Not working? That's because you don't have the branch yet on your local repository, it needs to be created during the checkout by adding the `-b` parameter:
 
 `git checkout -b <branch_name>`
 
-* Now you can switch between the `Master` and `Dev` without the `-b` parameter because those branches are already created in your local repository
+* Now you can switch between the `master` and `dev` without the `-b` parameter because those branches are already created in your local repository
 
 Exercise 3: Making changes
 ===
 
 When adding new feature or correcting bug we do it in a new branch for a better organization and code maintenance. (You could then remove one feature easily)
 
-* Be sure you are on the Dev branch
-* Be sure your Dev branch is up to date with the remote using `git pull <remote_name> <branch_name>`
+* Be sure you are on the dev branch
+* Be sure your dev branch is up to date with the remote using `git pull <remote_name> <branch_name>`
 * Create a new branch named `add_water` based on the dev one using `git checkout`
 * Modify the `shopping.csv` to add 3 bottles of water to the shopping list
 * Commit your changes
@@ -50,14 +50,14 @@ When adding new feature or correcting bug we do it in a new branch for a better 
 Exercise 4: Merging
 ===
 
-You now have your changes ready to be merged into the `Dev` branch:
+You now have your changes ready to be merged into the `dev` branch:
 
 * Checkout the `dev` branch
 * Don't forget to `pull` your branch before merging in case it's not up to date
 * Merge using the `git merge <branch_name>` to merge a branch into the current one
 * Commit the changes
 
-You should now have water in you `Dev` branch!
+You should now have water in you `dev` branch!
 Note that in good development environments, a developer won't merge its code by himself but will do a request that will be reviwed by someone else (usually senior member of the team) who will decide if it's really ok to be merged
 
 Exercise 5: Deleting a branch
@@ -77,7 +77,7 @@ This happens usually when the same lines you modified were modified after your l
 
 The branch `add_honey` added honey to the end of the list.
 
-* Checkout the latest `Dev`
+* Checkout the latest `dev`
 * Try to merge it with the `add_honey` branch
 
 Conflicts! Why?
