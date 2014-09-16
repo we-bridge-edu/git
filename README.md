@@ -54,7 +54,6 @@ You now have your changes ready to be merged into the `dev` branch:
 * Checkout the `dev` branch
 * Don't forget to `pull` your branch before merging in case it's not up to date
 * Merge using the `git merge <branch_name>` to merge a branch into the current one
-* Commit the changes
 
 You should now have water in you `dev` branch!
 Note that in good development environments, a developer won't merge its code by himself but will do a request that will be reviwed by someone else (usually senior member of the team) who will decide if it's really ok to be merged
